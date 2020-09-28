@@ -9,8 +9,8 @@ beforeAll(async () => await jest.useFakeTimers());
 
 
 describe("/", () => {
-  it("can get correctly", async (done) => {
-   await request
+  it("can get correctly", (done) => {
+   return request
       .post("/graphql")
       .send({
         query: `
@@ -26,15 +26,15 @@ describe("/", () => {
       .then((res) => {
         // console.log(res.text);
         expect(res.status).toBe(200);
-       
+        done();
       });
-    done();
+  
   });
 });
 
 describe("/", () => {
-  it("can get correctly", async (done) => {
-   await request
+  it("can get correctly",(done) => {
+   return request
       .post("/graphql")
       .send({
         query: `
@@ -48,15 +48,15 @@ describe("/", () => {
       .then((res) => {
         // console.log(res.text);
         expect(res.status).toBe(200);
-        
+        done();
       });
-    done();
+   
   });
 });
 
 describe("/", () => {
-  it("can get correctly", async (done) => {
-    await request
+  it("can get correctly", (done) => {
+     return request
       .post("/graphql")
       .send({
         query: `
@@ -78,15 +78,15 @@ describe("/", () => {
       .then((res) => {
         // console.log(res.text);
         expect(res.status).toBe(200);
-       
+        done();
       });
-    done();
+   
   });
 });
 
 describe("/", () => {
-  it("can get correctly", async (done) => {
-    await request
+  it("can get correctly", (done) => {
+    return request
       .post("/graphql")
       .send({
         query: `
@@ -103,14 +103,14 @@ describe("/", () => {
       .then((res) => {
         // console.log(res.text);
         expect(res.status).toBe(200);
-        
+        done();
       });
-    done();
+   
   });
 });
 describe("/", () => {
-  it("can get correctly", async (done) => {
-    await request
+  it("can get correctly", (done) => {
+     return request
       .post("/graphql")
       .send({
         query: `
@@ -124,9 +124,9 @@ describe("/", () => {
       .then((res) => {
         // console.log(res.text);
         expect(res.status).toBe(200);
-        
+        done();
       });
-    done();
+   
   });
 });
 

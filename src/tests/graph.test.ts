@@ -22,8 +22,9 @@ describe("/", () => {
       .then((res) => {
         // console.log(res.text);
         expect(res.status).toBe(200);
-        done();
+       
       });
+    done();
   });
 });
 
@@ -43,8 +44,9 @@ describe("/", () => {
       .then((res) => {
         // console.log(res.text);
         expect(res.status).toBe(200);
-        done();
+        
       });
+    done();
   });
 });
 
@@ -72,8 +74,9 @@ describe("/", () => {
       .then((res) => {
         // console.log(res.text);
         expect(res.status).toBe(200);
-        done();
+       
       });
+    done();
   });
 });
 
@@ -96,8 +99,9 @@ describe("/", () => {
       .then((res) => {
         // console.log(res.text);
         expect(res.status).toBe(200);
-        done();
+        
       });
+    done();
   });
 });
 describe("/", () => {
@@ -116,8 +120,9 @@ describe("/", () => {
       .then((res) => {
         // console.log(res.text);
         expect(res.status).toBe(200);
-        done();
+        
       });
+    done();
   });
 });
 

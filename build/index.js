@@ -47,15 +47,27 @@ var database_1 = require("./database");
 var schema1_1 = __importDefault(require("./schema1"));
 var regAuth_1 = __importDefault(require("./regAuth"));
 var graphql_1 = require("graphql");
-mongoose_1.default.connect("mongodb+srv://physicist1:physicist1@cluster0.uvzxt.mongodb.net/test", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false,
-}, function (err) {
-    if (!err) {
-        console.log('success');
-    }
-});
+function test() {
+    return __awaiter(this, void 0, void 0, function () {
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, mongoose_1.default.connect("mongodb+srv://physicist1:physicist1@cluster0.uvzxt.mongodb.net/test", {
+                        useNewUrlParser: true,
+                        useUnifiedTopology: true,
+                        useFindAndModify: false,
+                    }, function (err) {
+                        if (!err) {
+                            console.log('success');
+                        }
+                    })];
+                case 1:
+                    _a.sent();
+                    return [2 /*return*/];
+            }
+        });
+    });
+}
+test();
 // Provide resolver functions for your schema fields
 var resolvers = {
     hello: function () { return "Hello world!"; },

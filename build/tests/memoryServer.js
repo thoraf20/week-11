@@ -134,7 +134,6 @@ describe("POST route ", function () {
      * Tests that you can post to db.
      */
     var data = {
-        // _id: "5f720d60f15b18001d8202cb",
         products: ["Mango", "Cashew"],
         employees: ["rafuu", "Bulus"],
         ceo: "Chika",
@@ -143,7 +142,6 @@ describe("POST route ", function () {
         country: "Nigeria",
         marketvalue: 90,
     };
-    //   data["noOfEmployees"] = data.employees.length;
     it("can be created correctly", function () { return __awaiter(void 0, void 0, void 0, function () {
         return __generator(this, function (_a) {
             expect(function () { return __awaiter(void 0, void 0, void 0, function () { return __generator(this, function (_a) {

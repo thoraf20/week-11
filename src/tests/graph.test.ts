@@ -4,6 +4,10 @@ import app from "../index";
 
 const request = supertest(app);
 
+
+beforeAll(async () => await jest.useFakeTimers());
+
+
 describe("/", () => {
   it("can get correctly", (done) => {
     request

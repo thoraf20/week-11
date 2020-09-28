@@ -9,8 +9,8 @@ beforeAll(async () => await jest.useFakeTimers());
 
 
 describe("/", () => {
-  it("can get correctly", (done) => {
-    request
+  it("can get correctly", async (done) => {
+   await request
       .post("/graphql")
       .send({
         query: `
@@ -33,8 +33,8 @@ describe("/", () => {
 });
 
 describe("/", () => {
-  it("can get correctly", (done) => {
-    request
+  it("can get correctly", async (done) => {
+   await request
       .post("/graphql")
       .send({
         query: `
@@ -55,8 +55,8 @@ describe("/", () => {
 });
 
 describe("/", () => {
-  it("can get correctly", (done) => {
-    request
+  it("can get correctly", async (done) => {
+    await request
       .post("/graphql")
       .send({
         query: `
@@ -85,8 +85,8 @@ describe("/", () => {
 });
 
 describe("/", () => {
-  it("can get correctly", (done) => {
-    request
+  it("can get correctly", async (done) => {
+    await request
       .post("/graphql")
       .send({
         query: `
@@ -109,8 +109,8 @@ describe("/", () => {
   });
 });
 describe("/", () => {
-  it("can get correctly", (done) => {
-    request
+  it("can get correctly", async (done) => {
+    await request
       .post("/graphql")
       .send({
         query: `

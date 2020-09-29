@@ -53,7 +53,7 @@ function test() {
             switch (_a.label) {
                 case 0: return [4 /*yield*/, mongoose_1.default.connect("mongodb+srv://physicist1:physicist1@cluster0.uvzxt.mongodb.net/test", {
                         useNewUrlParser: true,
-                        useUnifiedTopology: true,
+                        useUnifiedTopology: false,
                         useFindAndModify: false,
                     }, function (err) {
                         if (!err) {

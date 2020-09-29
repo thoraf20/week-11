@@ -21,7 +21,7 @@ import {
 async function test () {
   await mongoose.connect("mongodb+srv://physicist1:physicist1@cluster0.uvzxt.mongodb.net/test", {
     useNewUrlParser: true,
-    useUnifiedTopology: true,
+    useUnifiedTopology: false,
     useFindAndModify: false,
   }, (err) => {
     if (!err) {

@@ -71,7 +71,7 @@ var connect = function () { return __awaiter(void 0, void 0, void 0, function ()
                 options = {
                     useNewUrlParser: true,
                     useFindAndModify: false,
-                    useUnifiedTopology: true,
+                    useUnifiedTopology: false,
                     useCreateIndex: true,
                 };
                 return [4 /*yield*/, mongoose_1.default.connect(uri, options)];

@@ -8,4 +8,6 @@ module.exports = {
         "^.+\\.(js|jsx|js)$": "js-jest",
     },
     testEnvironment: "node",
+    globalSetup: './setupTests.js',
+    globalTeardown: './teardownTests.js',
 };

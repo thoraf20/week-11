@@ -51,7 +51,7 @@ beforeAll(function () { return __awaiter(void 0, void 0, void 0, function () { r
 }); }); });
 describe("/", function () {
     it("can get correctly", function (done) {
-        return request
+        request
             .post("/graphql")
             .send({
             query: "\n      query{\n        OrganizationWithId(id:\"5f60cdc576fd80bb110af5a3\"){\n          organization,\n          address,\n          ceo,\n        }\n      }  \n      ",
@@ -59,13 +59,13 @@ describe("/", function () {
             .then(function (res) {
             // console.log(res.text);
             expect(res.status).toBe(200);
-            done();
         });
+        done();
     });
 });
 describe("/", function () {
     it("can get correctly", function (done) {
-        return request
+        request
             .post("/graphql")
             .send({
             query: "\n      query{\n        allOrganizationInfo{\n          employees\n        }\n      }  \n      ",
@@ -73,13 +73,13 @@ describe("/", function () {
             .then(function (res) {
             // console.log(res.text);
             expect(res.status).toBe(200);
-            done();
         });
+        done();
     });
 });
 describe("/", function () {
     it("can get correctly", function (done) {
-        return request
+        request
             .post("/graphql")
             .send({
             query: "\n      mutation{\n        addNewOrganization(\n        organization: \"thoraf Consult\"\n         products: [\"consultancy\", \"Software Development\"]\n         marketvalue: 76.7\n         address: \"torafre\"\n        ceo: \"Rauf\"\n        country: \"Nija\"\n        employees: [\"thoraf\",\"toheeb\"]\n        ){\n          country\n        }\n      }  \n      ",
@@ -87,13 +87,13 @@ describe("/", function () {
             .then(function (res) {
             // console.log(res.text);
             expect(res.status).toBe(200);
-            done();
         });
+        done();
     });
 });
 describe("/", function () {
     it("can get correctly", function (done) {
-        return request
+        request
             .post("/graphql")
             .send({
             query: "\n      mutation{\n        updateOrganizationInfo(\n          id:\"5f60cdc576fd80bb110af5a3\",\n          country:\"Abija\",\n          ){\n          country\n        }\n      }  \n      ",
@@ -101,13 +101,13 @@ describe("/", function () {
             .then(function (res) {
             // console.log(res.text);
             expect(res.status).toBe(200);
-            done();
         });
+        done();
     });
 });
 describe("/", function () {
     it("can get correctly", function (done) {
-        return request
+        request
             .post("/graphql")
             .send({
             query: "\n      mutation{\n        deleteOrganization(id:\"5f60cdc576fd80bb110af5a3\"){\n          country\n        }\n      }  \n      ",
@@ -115,8 +115,8 @@ describe("/", function () {
             .then(function (res) {
             // console.log(res.text);
             expect(res.status).toBe(200);
-            done();
         });
+        done();
     });
 });
 afterAll(function (done) {

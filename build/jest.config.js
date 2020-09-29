@@ -1,11 +1,11 @@
 module.exports = {
     roots: ["<rootDir>/build"],
     testMatch: [
-        "**/__tests__/**/*.+(js|jsx|js)",
-        "**/?(*.)+(spec|test).+(js|jsx|js)",
+        "**/__tests__/**/*.+(ts|tsx|ts)",
+        "**/?(*.)+(spec|test).+(ts|tsx|ts)",
     ],
     transform: {
-        "^.+\\.(js|jsx|js)$": "js-jest",
+        "^.+\\.(ts|tsx|ts)$": "ts-jest",
     },
     testEnvironment: "node",
     globalSetup: './setupTests.js',

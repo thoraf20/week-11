@@ -5,7 +5,7 @@
   "main": "build/index.js",
   "scripts": {
     "start": "nodemon ./build/index.js",
-    "test" : "jest --runInBand ./build/tests/graph.test.js"
+    "test" : "jest --detectOpenHandles --verbose --forceExit --maxWorkers=1 ./build/tests/graph.test.js"
   },
   "repository": {
     "type": "git",

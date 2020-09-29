@@ -18,19 +18,19 @@ import {
 } from "graphql";
 
 
-async function test () {
-  await mongoose.connect("mongodb+srv://physicist1:physicist1@cluster0.uvzxt.mongodb.net/test", {
-    useNewUrlParser: true,
-    useUnifiedTopology: false,
-    useFindAndModify: false,
-  }, (err) => {
-    if (!err) {
-      console.log('success')
-    }
-  });
-}
+// async function test () {
+//   await mongoose.connect("mongodb+srv://physicist1:physicist1@cluster0.uvzxt.mongodb.net/test", {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: false,
+//     useFindAndModify: false,
+//   }, (err) => {
+//     if (!err) {
+//       console.log('success')
+//     }
+//   });
+// }
 
-test();
+// test();
 
 
 // Provide resolver functions for your schema fields

@@ -40,34 +40,24 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var express_1 = __importDefault(require("express"));
-var mongoose_1 = __importDefault(require("mongoose"));
 var express_graphql_1 = require("express-graphql");
 var body_parser_1 = __importDefault(require("body-parser"));
 var database_1 = require("./database");
 var schema1_1 = __importDefault(require("./schema1"));
 var regAuth_1 = __importDefault(require("./regAuth"));
 var graphql_1 = require("graphql");
-function test() {
-    return __awaiter(this, void 0, void 0, function () {
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0: return [4 /*yield*/, mongoose_1.default.connect("mongodb+srv://physicist1:physicist1@cluster0.uvzxt.mongodb.net/test", {
-                        useNewUrlParser: true,
-                        useUnifiedTopology: false,
-                        useFindAndModify: false,
-                    }, function (err) {
-                        if (!err) {
-                            console.log('success');
-                        }
-                    })];
-                case 1:
-                    _a.sent();
-                    return [2 /*return*/];
-            }
-        });
-    });
-}
-test();
+// async function test () {
+//   await mongoose.connect("mongodb+srv://physicist1:physicist1@cluster0.uvzxt.mongodb.net/test", {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: false,
+//     useFindAndModify: false,
+//   }, (err) => {
+//     if (!err) {
+//       console.log('success')
+//     }
+//   });
+// }
+// test();
 // Provide resolver functions for your schema fields
 var resolvers = {
     hello: function () { return "Hello world!"; },

@@ -348,5 +348,5 @@ app.use("/graphql", express_graphql_1.graphqlHTTP({
     graphiql: true,
     rootValue: resolvers,
 }));
-app.listen(4000);
-console.log("\uD83D\uDE80 Server ready at http://localhost:4000/graphql");
+// app.listen(4000);
+// console.log(`🚀 Server ready at http://localhost:4000/graphql`);

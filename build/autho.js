@@ -17,7 +17,7 @@ function auth(req, res, next) {
     try {
         var decoded = jsonwebtoken_1.default.verify(token, process.env.SECRET_KEY);
         // console.log(decoded);
-        req.user = decoded;
+        //  req.user = decoded;
         next();
     }
     catch (e) {

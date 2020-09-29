@@ -13,7 +13,7 @@ export function auth (req: Request, res: Response, next: NextFunction) {
  try {
  const decoded = jwt.verify(token, process.env.SECRET_KEY as string);
  // console.log(decoded);
- req.user = decoded;
+//  req.user = decoded;
  next();
  } catch (e) {
  res.status(400).send('Invalid Token');

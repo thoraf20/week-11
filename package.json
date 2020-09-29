@@ -5,7 +5,7 @@
   "main": "build/index.js",
   "scripts": {
     "start": "nodemon ./build/index.js",
-    "test" : "jest --runInBand ./build/tests"
+    "test" : "jest --runInBand ./build/tests/graph.test.js"
   },
   "repository": {
     "type": "git",
